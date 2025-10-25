@@ -1,0 +1,25 @@
+{
+    "name": "quicksoftapp/tcb-bank-api",
+    "description": "Laravel package for Tanzania Commercial Bank (TCB) CMS API Integration",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Quicksoftapp\\TCBBankAPI\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quicksoftapp\\TCBBankAPI\\TCBBankAPIServiceProvider"
+            ],
+            "aliases": {
+                "TCBBankAPI": "Quicksoftapp\\TCBBankAPI\\Facades\\TCBBankAPI"
+            }
+        }
+    }
+}
